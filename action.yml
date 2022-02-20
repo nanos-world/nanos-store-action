@@ -1,0 +1,19 @@
+name: 'Nanos Store Action'
+description: 'Nanos Store Action'
+inputs:
+  folder:
+    description: 'Folder which contains the asset/package'
+    required: false
+    default: ''
+  changelog:
+    description: 'Changelog of the release. Can be edited on the store before it gets published.'
+    required: true
+  name:
+    description: 'Name of the asset/package.'
+    required: true
+  token:
+    description: 'API token -> https://store.nanos.world/settings/tokens/'
+    required: true
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
