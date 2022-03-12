@@ -1,8 +1,8 @@
 name: 'Nanos Store Action'
-description: 'Nanos Store Action'
+description: 'Automatically push updates to nanos world Store'
 inputs:
   folder:
-    description: 'Folder which contains the asset/package'
+    description: 'Folder which contains the asset/package - if it's on root, leave it blank'
     required: false
     default: ''
   changelog:
@@ -12,7 +12,7 @@ inputs:
     description: 'Name of the asset/package.'
     required: true
   token:
-    description: 'API token -> https://store.nanos.world/settings/tokens/'
+    description: 'API token - generate at https://store.nanos.world/settings/tokens/ and set under Settings -> Secrets -> Actions with name STORE_SECRET'
     required: true
 runs:
   using: 'node16'
