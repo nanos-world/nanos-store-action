@@ -2,12 +2,9 @@ name: 'Nanos Store Action'
 description: 'Automatically push updates to nanos world Store'
 inputs:
   folder:
-    description: 'Folder which contains the asset/package - if it's on root, leave it blank'
+    description: "Folder which contains the asset/package - if it's on root, leave it blank"
     required: false
     default: ''
-  changelog:
-    description: 'Changelog of the release. Can be edited on the store before it gets published.'
-    required: true
   name:
     description: 'Name of the asset/package.'
     required: true
