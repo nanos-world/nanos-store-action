@@ -53028,7 +53028,7 @@ async function run() {
 	});
 
 	// Get the outputs for the created release from the response
-	const changelog = getReleaseResponse.body;
+	const changelog = getReleaseResponse.data.body;
 	const folder = core.getInput('folder');
 	const name = core.getInput('name');
 	const token = core.getInput('token');
